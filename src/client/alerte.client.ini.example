@@ -1,0 +1,27 @@
+; ============================================================
+;  FlashAlert — Configuration du Client
+;  Copiez ce fichier en "alerte.ini" et adaptez les chemins.
+; ============================================================
+
+[Chemins]
+; Chemin UNC vers le fichier de message partagé (lu par le client)
+; Ce fichier doit être accessible en lecture depuis le poste client.
+Message=\\serveur\partage\flashalert\shared\message.txt
+
+; Chemin UNC vers le fichier de log
+; Ce fichier doit être accessible en lecture ET en écriture depuis le poste client.
+Log=\\serveur\partage\flashalert\shared\log.txt
+
+; Chemin vers le fichier son joué lors d'une alerte
+; Peut être un chemin UNC ou local. Format WAV uniquement.
+; Si le fichier est absent, FlashAlert utilise les sons système Windows.
+Son=\\serveur\partage\flashalert\shared\alerte.wav
+
+[Options]
+; Intervalle de vérification du fichier message, en millisecondes
+; Valeur recommandée : entre 1000 (1 s) et 5000 (5 s)
+Intervalle=3000
+
+; Délai de répétition du son d'alerte, en secondes
+; Le son est rejoué toutes les X secondes tant que la popup n'est pas acquittée
+SonRepeat=15

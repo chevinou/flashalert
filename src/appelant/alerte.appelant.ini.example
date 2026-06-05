@@ -1,0 +1,22 @@
+; ============================================================
+;  FlashAlert — Configuration de l'Appelant
+;  Copiez ce fichier en "alerte.ini" et adaptez les chemins.
+; ============================================================
+
+[Chemins]
+; Chemin UNC vers le fichier de message partagé (écrit par l'appelant, lu par les clients)
+; Ce fichier doit être accessible en lecture ET en écriture depuis le poste appelant.
+Message=\\serveur\partage\flashalert\shared\message.txt
+
+; Chemin UNC vers le fichier menu (définition des boutons d'alerte)
+; Ce fichier doit être accessible en lecture depuis le poste appelant.
+Menu=\\serveur\partage\flashalert\shared\menu.txt
+
+; Chemin UNC vers le fichier de log
+; Ce fichier doit être accessible en lecture ET en écriture depuis le poste appelant.
+Log=\\serveur\partage\flashalert\shared\log.txt
+
+[Options]
+; Délai en secondes avant déclenchement automatique du bouton [PRINCIPAL]
+; si l'opérateur ne clique pas. Minimum recommandé : 5
+Delai=10

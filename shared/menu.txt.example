@@ -1,0 +1,29 @@
+; ============================================================
+;  Alerte - Fichier MENU
+;
+;  FORMAT : Texte_bouton|TYPE|Titre alerte|Corps message
+;
+;  TYPE : urgence (rouge) / alerte (orange) / info (bleu)
+;
+;  [PRINCIPAL] = bouton declenche automatiquement si pas de clic
+;  [BOUTON]    = bouton supplementaire
+;  Lignes commencant par ; = commentaires
+; ============================================================
+
+[PRINCIPAL]
+AGRESSION / DANGER IMMEDIAT|urgence|AGRESSION A L'ACCUEIL|Situation de danger a l'accueil. Intervention immediate requise.
+
+[BOUTON]
+Besoin d'aide - Accueil sature|alerte|RENFORT ACCUEIL|File d'attente importante. Renfort demande a l'accueil.
+
+[BOUTON]
+Appel a temoin - Incident|alerte|INCIDENT EN COURS|Incident en cours a l'accueil. Merci de vous signaler.
+
+[BOUTON]
+Malaise / Secours medical|urgence|URGENCE MEDICALE|Personne en malaise a l'accueil. Appelez le 15 / 18.
+
+[BOUTON]
+Information - Reunion imminente|info|INFORMATION|Reunion de service dans 5 minutes. Merci de rejoindre la salle de reunion.
+
+[BOUTON]
+Fermeture accueil|info|ACCUEIL FERME|L'accueil est temporairement ferme. Merci de patienter.
