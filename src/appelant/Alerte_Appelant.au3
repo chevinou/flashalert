@@ -1,5 +1,5 @@
 ; ============================================================
-;  AlerteAH - Appelant
+;  Alerte_Appelant - Appelant
 ;  Couleurs fixes par type : urgence=rouge / alerte=orange / info=bleu
 ;  Boutons = Labels WM_CTLCOLORSTATIC (couleurs garanties Win10/11)
 ; ============================================================
@@ -20,7 +20,7 @@ EndIf
 ; ---- Configuration ----
 Global $iniFile = @ScriptDir & "\alerte.ini"
 If Not FileExists($iniFile) Then
-    MsgBox(16, "AlerteAH - Erreur", "Fichier de configuration introuvable :" & @CRLF & $iniFile)
+    MsgBox(16, "Alerte Appelant - Erreur", "Fichier de configuration introuvable :" & @CRLF & $iniFile)
     Exit
 EndIf
 Global $msgFile    = IniRead($iniFile, "Chemins", "Message",  @ScriptDir & "\..\shared\message.txt")
